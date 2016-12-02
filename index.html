@@ -26,7 +26,7 @@
       can.height = document.innerHeight
       can.style.cssText = 'position:absolute; left:0px; top:0px'
       document.body.cssText = 'overflow:hidden'
-      var ctx = can.getContext('2d')
+      this.ctx = can.getContext('2d')
     }
 
     draw () {
