@@ -1,0 +1,48 @@
+<html>
+
+<canvas id=c></canvas>
+
+
+<script>
+
+  class turbine {
+    constructor (x,y, width=30, height=90) {
+      this.x = x
+      this.y = y
+      this.dx = 0
+      this.dy = 0
+      this.width = width
+      this.height = height
+    }
+  }
+
+  class model {
+    constructor () {
+      this.turbines = []
+      this.windV = [0,0]
+      //
+      var can = document.getElementById('c')
+      can.width = document.innerWidth
+      can.height = document.innerHeight
+      can.style.cssText = 'position:absolute; left:0px; top:0px'
+      document.body.cssText = 'overflow:hidden'
+      var ctx = can.getContext('2d')
+    }
+
+    function draw () {
+
+    }
+
+    function step() {
+      requestAnimationFrame(()=>{
+        this.draw()
+      })
+    }
+
+  }
+
+</script>
+
+
+
+</html>
